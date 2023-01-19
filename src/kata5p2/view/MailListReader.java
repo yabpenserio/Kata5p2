@@ -1,5 +1,6 @@
-package kata5p2;
+package kata5p2.view;
 
+import kata5p2.model.Mail;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,7 +12,7 @@ import java.util.regex.Pattern;
 
 public class MailListReader{
     private static final Pattern emailPattern = Pattern.compile("^[\\w-\\.].+@([\\w-]+\\.)+[\\w-]{2,4}$");
-    static List<Mail> read(String fileName){
+    public static List<Mail> read(String fileName){
         List<Mail> result = new ArrayList<Mail>();
         try{
             BufferedReader reader = new BufferedReader(new FileReader(fileName));

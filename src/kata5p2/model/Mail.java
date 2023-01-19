@@ -1,4 +1,4 @@
-package kata5p2;
+package kata5p2.model;
 
 public class Mail {
     private String Mail;

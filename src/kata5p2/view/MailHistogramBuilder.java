@@ -1,5 +1,7 @@
-package kata5p2;
+package kata5p2.view;
 
+import kata5p2.model.Mail;
+import kata5p2.model.Histogram;
 import java.util.List;
 public class MailHistogramBuilder {
     private String fileName;
